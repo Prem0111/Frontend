@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        *
+        {
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #box
+        {
+            width:100%;
+            height:100%;
+            display: grid;
+            grid-template-areas:"box1 box1 box1""box3 box2 box2""box3 box4 box4""box5 box5 box5" ;
+        }
+        header
+        {
+            grid-area:box1;
+            height:80px;
+            width:80% auto;
+            box-shadow: 0px 0px 6px grey;
+            border-radius: 5px;
+            background-color: antiquewhite;
+        }
+        header h1
+        {
+            
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: brown;
+            font-size: 30px;
+            display: grid;
+            place-items: center center;
+            padding-top: 20px;
+        }
+        ul
+        {
+            margin: 0px;
+            display:flex;
+            justify-content:space-around;
+            align-content: center;
+            padding:4px;
+        }
+        a,li
+        {
+            text-decoration: none;
+            list-style-type: none;
+            transition:all 0.5;
+        }
+        a:hover
+        {
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        nav
+        {
+            grid-area:box2;
+            background-color: aqua;
+            height:40px;
+            width:100%;
+            margin: 0px;
+        }
+        aside
+        {
+            grid-area: box3;
+            width:30svh;
+            background-color: rgb(167, 167, 243);
+        }
+        main
+        {
+            grid-area: box4;
+            background-color: blanchedalmond;
+            height: 100%;
+            margin: 0px;
+        }
+        footer
+        {
+            grid-area:box5;
+            width:80% auto;
+            box-shadow: 0px 0px 6px grey;
+            border-radius: 5px;
+            background-color: antiquewhite;
+        }
+        footer p
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: brown;
+            font-size: 20px;
+            display: grid;
+            place-items: center center;
+            padding-top: 20px;
+            display: grid;
+            place-content: center center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <header>
+        <h1>PROJECT</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="INDIATOURISM.html" >Indian Tourism</a></li>
+            <li><a href="BOXMODEL_(ME).html" >Box Model</a></li>
+            <li><a href="BOXMODEL_EX(ME).html" >Burger Shop</a></li>
+            <li><a href="form.html" >Details</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam corporis quos, cum voluptas sed, quibusdam nihil doloremque, porro consequuntur distinctio? Repellendus maxime sequi officiis deserunt quam veniam magnam? Qui molestias cum beatae rerum voluptates facere recusandae aut cupiditate hic perspiciatis quos vitae consequatur nam mollitia minima, aperiam est et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae officiis fugiat error dolores molestias alias explicabo harum, quidem tempore.</p>
+    </aside>
+    <main>
+        <section>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ex necessitatibus, suscipit qui repudiandae alias atque quae dignissimos optio totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut ipsam eligendi molestias dolorem illum tenetur eaque fuga, veniam explicabo.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati tenetur rerum culpa eos amet quam iusto rem assumenda laborum fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores natus assumenda eveniet eligendi! Unde accusantium sequi ea architecto aliquam?</p>
+        </section>
+    </main>
+    <footer>
+        <p>All right reserved &COPY;</p>
+    </footer>
+</div>
+</body>
+</html>

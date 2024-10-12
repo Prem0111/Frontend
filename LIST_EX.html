@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lists</title>
+    <style>
+        #container
+        {
+            border:2px solid rgb(0, 38, 255);
+            margin:60px 280px 30px 280px;
+            border-radius: 6px;
+            box-shadow: 5px 5px 3px rgb(63, 63, 80);;
+        }
+        .li
+        {
+            list-style-type: none;
+            display: inline-block;
+            height:40px;
+            width:250px;
+            margin:-45px;
+            padding-top:8px;
+            padding-left:22px;
+            font-family:'Times New Roman', Times, serif;
+            font-size:24px;
+            border-left: 6px solid blue;
+            transition:0.5s ease-out;
+            background: linear-gradient(to left, rgb(197, 191, 191) 50%, blue 50%) right;
+            background-size: 200% 100%;
+            
+        }
+        .li:hover,.li2:hover
+        {
+            color:white;
+            background-position: left;
+            cursor: pointer;
+        }
+        .li2
+        {
+            list-style-type: none;
+            display: inline-block;
+            height:40px;
+            width:250px;
+            margin-left:60px;
+            padding-top:8px;
+            padding-left:22px;
+            font-family:'Times New Roman', Times, serif;
+            font-size:24px;
+            background-color: rgb(197, 191, 191);
+            border-left: 6px solid blue;
+            transition:0.5s ease-out;
+            background: linear-gradient(to left, rgb(197, 191, 191) 50%, blue 50%) right;
+            background-size: 200% 100%;
+        }
+        #box
+        {
+            border:2px  solid white;
+            list-style-type:none;
+            font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+            font-size:40px;
+            color:rgb(40, 40, 218);
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <ul>
+        <div>
+        <li id="box">A
+            <ul>
+                <li class="li">Afghanistan</li>
+                <li class="li2">Australia</li>
+            </ul>
+        </li>
+        <hr>
+    </div>
+        <li id="box">B
+            <ul>
+                <li class="li">Brazil</li>
+                <li class="li2">Bangladesh</li>
+            </ul>
+        </li>
+        <hr>
+        <li id="box">C
+            <ul>
+                <li class="li">China</li>
+                <li class="li2">Colombia</li>
+            </ul>
+        </li>
+        <hr>
+        <li id="box">F
+            <ul>
+                <li class="li">Finland</li>
+                <li class="li2">France</li>
+            </ul>
+        </li>
+        <hr>
+        <li id="box">I
+            <ul>
+                <li class="li">India</li>
+                <li class="li2">Iran</li>
+            </ul>
+        </li>
+        <hr>
+        <li id="box">R
+        <ul>
+            <li class="li">Romia</li>
+            <li class="li2">Russia</li>
+        </ul>
+        </li>
+        <hr>
+        <li id="box">U
+            <ul>
+                <li class="li">United States of America</li>
+                <li class="li2">United Kingdom</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

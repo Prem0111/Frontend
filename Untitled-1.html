@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lesser</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 70px;
+    padding: 0px 15%;
+    box-shadow: 0px 0px 7px 2px rgb(204, 204, 204);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    font-family: arial;
+}
+
+header ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul li a {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #929292;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+header ul li a:hover {
+    border-radius: 20px;
+    background-color: #5bd49b;
+    color: #ffffff;
+}
+
+/*small devices*/
+@media only screen and (max-width: 700px) {
+
+    header {
+        display: block;
+        height: fit-content;
+        width: 100%;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    header .brand {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+        font-size: 20px;
+        box-shadow: 0px 0px 7px 2px rgb(179, 178, 178);
+
+    }
+
+    header ul {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: #f3f3f380;
+
+    }
+
+    header ul li a {
+        display: block;
+        width: 100%;
+        padding: 3px 2px;
+    }
+
+
+    .title h1{
+        padding: 0px 20px;
+    }
+
+    .gallery {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-1,
+    .img-2 {
+        width: auto;
+    }
+
+    .img-3,
+    .img-4 {
+        width: 45%;
+    }
+
+    .desc2-container {
+        width:100%;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width: 769px) {
+    .desc2-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .img-1 {
+        width: 500px;
+    }
+
+    .img-2 {
+        width: 500px;
+    }
+
+    .img-3 {
+        width: 236px;
+    }
+
+    .img-4 {
+        width: 236px;
+    }
+
+
+    .gallery {
+        padding: 0px 10%;
+    }
+
+}
+
+
+section {
+    text-align: center;
+}
+
+.fa-bolt {
+    color: #309666;
+    float: left;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+.title {
+    margin: 30px 0px 15px 0px;
+    font-family: 'Times New Roman';
+    color: #868686;
+    font-size: 22px;
+}
+
+
+.gallery {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.gallery .column2 {
+    float: left;
+}
+
+
+
+
+.img-1 {
+    background: url(img1.jpg) no-repeat;
+    height: 500px;
+    background-size: cover;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 1px #dddddd;
+}
+
+.img-2 {
+    background: url(img2.jpg) no-repeat;
+    height: 240px;
+    background-size: cover;
+    margin: 10px 10px 20px 10px;
+    box-shadow: 0px 0px 5px 1px #dddddd;
+}
+
+.img-3 {
+    background: url(img3.jpg) no-repeat;
+    height: 240px;
+    float: left;
+    background-size: cover;
+    margin-left: 10px;
+    float: left;
+    box-shadow: 0px 0px 5px 1px #dddddd;
+}
+
+.img-4 {
+    background: url(img4.jpg) no-repeat;
+    height: 240px;
+    float: left;
+    background-size: cover;
+    margin-left: 20px;
+    box-shadow: 0px 0px 5px 1px #dddddd;
+}
+
+
+.gallery h3,
+.gallery h5 {
+    color: #ffffff;
+    font-family: 'Times New Roman';
+    text-align: left;
+    margin: 10px 15px;
+    vertical-align: bottom;
+
+}
+
+.container-bottom {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, #5bd49b 25%, #679bc5 70%);
+}
+
+.container-bottom h2 {
+    margin: 10px;
+    color: #ffffff;
+}
+
+.container-bottom p {
+    font-family: arial;
+    margin: 5px;
+    color: #ffffff;
+}
+
+.desc1 {
+    padding: 50px 50px 50px;
+}
+
+
+.desc2 {
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.desc2 p {
+    line-height: 26px;
+}
+
+
+.desc2 i {
+    font-size: 90px;
+    color: #ffffff;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <h3> LESSER </h3>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <section>
+            <div class="title">
+                <h1>Lesser is a creative agency that love to</h1>
+                <h1>create functional website</h1>
+            </div>
+
+
+            <div class="gallery">
+                <div class="img-1">
+                    <h3>Work With Love</h3>
+                    <h5>Architecture</h5>
+                </div>
+                <div class="column2">
+                    <div class="img-2">
+                        <h3>Scenery Nature</h3>
+                        <h5>Photography</h5>
+                    </div>
+                    <div class="img-3">
+                        <h3>Auto Racing</h3>
+                        <h5>Formula 1</h5>
+                    </div>
+                    <div class="img-4">
+                        <h3>Track Circuits</h3>
+                        <h5>Sports</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+        <section class="container-bottom">
+            <div class="desc1">
+                <h2> Our Awesome Services</h2>
+                <p>Far far away, Behind the word mountains, far from the coutries</p>
+                <p>Vokalia and Consanantia, there lives and blinds texts</p>
+            </div>
+
+            <div class="desc2-container">
+                <div class="desc2">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h2>Finance Dashboard</h2>
+                    <p>drive awareness to increase engagement incredasase the resolution, scale it up we need a
+                        larger print. Exposing new ways to evolve our design language. We need to levegg up we
+                        need a larger print. Exposing new water resrouce </p>
+                </div>
+    
+                <div class="desc2">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h2>Made with Love</h2>
+                    <p>drive awareness to increase engagement incredasase the resolution, scale it up we need a
+                        larger print. Exposing new ways to evolve our design language. We need to levegg up we
+                        need a larger print. Exposing new water resrouce </p>
+                </div>
+    
+                <div class="desc2">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h2>Help & Support</h2>
+                    <p>drive awareness to increase engagement incredasase the resolution, scale it up we need a
+                        larger print. Exposing new ways to evolve our design language. We need to levegg up we
+                        need a larger print. Exposing new water resrouce </p>
+                </div>
+            </div>
+          
+        </section>
+    </main>
+
+</body>
+
+</html>

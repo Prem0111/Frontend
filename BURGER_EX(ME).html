@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Food Menu</title>
+    <style>
+        body
+        {
+            margin:0px;
+            padding: 0px;
+            background-image: url(Images/burger1.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 800px 500px;
+        }
+        .burger
+        {
+            display: inline-block;
+            width:300px;
+            height:600px;
+            margin-left:15px;
+            padding:4px;
+            transition: all 0.3s;
+            background: linear-gradient(to bottom , #fd0202 50%,white 50%)bottom;
+            background-size: 100% 200%;
+            opacity: 85%;
+        }
+        .burger:hover
+        {
+            background-position:top;
+            border:2px solid rgb(177, 175, 175);
+            box-shadow: 0px 0px 3px 3px rgb(168, 167, 167);
+            cursor:grabbing;
+        .button
+        {
+            color:white;
+            transform: scale(1.2);
+            text-align: center;
+            margin:80px;
+            padding:5px;
+            border-radius: 5px;
+            border:2px solid grey;
+            display:block;
+        }
+        .button:hover
+        {
+            cursor:pointer;
+            transform: scale(1.8);
+            background: linear-gradient(to right,rgb(253, 2, 2),rgb(148, 49, 49));
+        }
+        }
+        .Head
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            color:rgb(8, 0, 0);
+            text-align: center;
+            font-weight:78px;;
+        }
+        p
+        {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:20px;
+        }
+        .button
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="burger">
+        <img src="Images/burger1.png" height="200px" width="300px" alt="Burger1">
+        <div class="Head">Double Burger</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="Head">$25.00</div>
+        <div class="button">Order Now</div>
+    </div>
+    <div class="burger">
+        <img src="Images/burger2.png"height="200px" width="300px" alt="Burger2" >
+        <div class="Head">Chicken Burger</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="Head">$9.50</div>
+        <div class="button">Order Now</div>
+    </div>
+    <div class="burger">
+        <img src="Images/burger3.png" height="200px" width="300px" alt="Burger3">
+        <div class="Head"> Mexican Burger</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="Head">$12.50</div>
+        <div class="button">Order Now</div>
+    </div>
+    <div class="burger">
+        <img src="Images/burger4.png" height="200px" width="300px" alt="Burger4">
+        <div class="Head">Mini Burger</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="Head">$10.90</div>
+        <div class="button">Order Now</div>
+    </div>
+</body>
+</html>

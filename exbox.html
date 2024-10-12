@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BoxModel CSS</title>
+        <style>
+            body
+            {
+                margin: 0px;
+                padding: 0px;
+                background-color: black;
+            }
+            h3
+            {
+                text-align: center;
+                letter-spacing: 3px;
+                color:rgb(3, 232, 248);
+                font-size: 48px;
+            }
+            p
+            {
+                letter-spacing: 3px;
+                word-spacing: 5px;
+                color:aliceblue;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 23px;
+                text-align: center;
+            }
+            #container
+            {
+                border:2px solid rgb(5, 198, 247);
+                height:450px;
+                width:380px;
+                margin-left: 450px;
+                margin-top: 120px;
+                border-radius: 6px;
+            }
+            #container:hover
+            {
+                box-shadow: 6px 6px 3px rgb(2, 207, 248),-4px -4px 3px rgb(2, 211, 253);
+                border-radius: 14px;
+                cursor: pointer;
+                transform: scale(1.2);
+                cursor: pointer;
+                animation:animations 3s;
+                p 
+                {
+                color:bisque;
+                }
+                h3
+                {
+                    text-shadow: 2px 2px 2px rgb(31, 129, 136);
+                    text-shadow: 4px 4px 4px rgb(14, 211, 218);
+                }
+                
+            }
+            @keyframes animations
+            {
+                0%{box-shadow: 4px 4px 3px rgb(52, 57, 58),-4px -4px 3px rgb(52, 57, 58)}
+                25%{box-shadow:4px 4px 3px  rgb(79, 122, 115),-4px -4px 3px rgb(79, 122, 115)}
+                50%{box-shadow:4px 4px 3px  rgb(91, 187, 194),-4px -4px 3px rgb(91, 187, 194)}
+                75%{box-shadow:4px 4px 3px rgb(12, 180, 202),-4px -4px 3px rgb(12, 180, 202)}
+                100%{box-shadow: 4px 4px 4px rgb(2, 221, 250),-4px -4px 3px rgb(2, 221, 250)}
+            }
+        </style>
+    </head>
+    <body>
+    <div id="container">
+        <h3>The Box Model</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis iste nobis aperiam exercitationem ratione cumque ea mollitia consequuntur alias vero, officia obcaecati cum earum, tenetur ullam nulla! Eligendi, amet!</p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body
+      {
+        margin: 0px;
+        padding: 0px;
+        background-color:#ffb788;
+      }
+      .box
+      {
+        height:1200px;
+        width:800px;
+        padding-top:10px;
+        margin:10px 150px 10px 250px;
+        transition: box-shadow 0.5s;
+        background-color: #ffc199;
+        border-radius: 15px;
+      }
+      .box:hover
+      {
+        box-shadow:0px 0px 5px #fd9b9b,0px 0px 10px #fffefe,0px 0px 20px #fffefe,0px 0px 30px #fffefe;
+      }
+      #head
+      {
+        background-color: wheat;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        height:100px;
+        margin-top:0px;
+        border-radius: 10px;
+        transition: text-shadow 0.5s;
+        color:#fd6060;
+      }
+      #head:hover
+      {
+        text-shadow:0px 0px 5px #fd9b9b,0px 0px 10px #fffefe,0px 0px 20px #fffefe,0px 0px 30px #fffefe;
+        cursor: pointer;
+      }
+      #space1
+      {
+        margin-top:30px;
+        height:1000px;
+      }
+      .label
+      {
+        font-size: 20px;
+        width:150px;
+        height: 20px;
+        float: left;
+        margin: 5px 20px 20px 120px;
+        color:#fc3a3a;
+        transition:text-shadow 0.5s;
+      }
+      .label:hover,select:hover
+      {
+        text-shadow:0px 0px 5px #fd9b9b,0px 0px 10px #fffefe,0px 0px 20px #fffefe,0px 0px 30px #fffefe;
+        cursor:pointer;
+      }
+      input,select,option
+      {
+        width:300px;
+        height: 20px;
+        border:none;
+        margin: 5px 20px 20px 60px;
+        font-size: 18px;
+        background-color: #ffc199;
+        transition:box-shadow 0.5s,border-radius 1s,transform 0.5s;
+      }
+      input:focus
+      {
+        border:none;
+        outline:none;
+        box-shadow:0px 0px 5px #fd9b9b,0px 0px 10px #fffefe,0px 0px 20px #fffefe;
+        border-radius: 5px;
+        transform: scale(1.2);
+      }
+      .button1,.button2
+      {
+        background-color: white;
+        border-radius:10px;
+        width:150px;
+        height:25px;
+        background-color: rgb(197, 187, 187);
+        border: 2px solid grey;
+        float:left
+      }
+      .button1
+      {
+          margin-left:20px;
+          margin-right:400px;
+      }
+      .button1:hover,.button2:hover
+      {
+        box-shadow: 0px 0px 5px #fd9b9b,0px 0px 10px #fffefe,0px 0px 20px #fffefe;
+      }
+      .buttons
+      {
+        height: 15px;
+        width:15px;
+        margin:0px;
+        margin-left:60px;
+      }
+      .box .space .label:nth-child(9)
+      {
+        border:2px solid red;
+      }
+      .space 
+      {
+        margin: 20px -20px 20px 0px;
+        display: flex;
+        align-items: center;
+      }
+      /*  */
+      select {
+        width: 300px;
+        height: 20px;
+        border: none;
+        font-size: 18px;
+        background-color: #ffc199;
+        transition: box-shadow 0.5s, border-radius 1s, transform 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+  <form>
+    <div class="box">
+      <div id="head">
+        <h1>Details</h1>
+      </div>
+      <div id="space1">
+      <div class="space">
+      <div class="label">
+        <label for="Name">Name</label>
+      </div>
+      <input type="text" id="Name" placeholder="Please Enter Your Name" autofocus="autofocus" name="Name"/>
+    </div>
+    <div class="space">
+      <div class="label">
+        <label for="Rollno">Roll no</label>
+      </div>
+      <input type="text" id="Rollno" placeholder="Please Enter Your Roll No" name="Rollno"/>
+    </div>
+      <div class="space">
+      <div class="label">
+        <label for="Register">Register Number</label>
+      </div>
+      <input type="text" id="Register" placeholder="Please Enter Your Register Number" name="Register"/>
+    </div>
+      <div class="space">
+      <div class="label">
+        <label for="Email">Email</label>
+      </div>
+      <input type="email" id="Email" placeholder="Please Enter Your Email" name="Email"/>
+    </div>
+      <div class="space">
+      <div class="label">
+        <label for="Phone">Phone</label>
+      </div>
+      <input type="number" id="Phone" placeholder="Please Enter Your Phone Number" name="Phone" pattern="^[0-9]*$" />
+    </div>
+    <div class="space">
+      <div class="label">
+        <label for="Country">Country</label>
+      </div>
+      <input type="text" id="Country" placeholder="Please Enter Your Country" name="Country"value="India" readonly="readonly"/>
+    </div>
+    <div class="space">
+      <div class="label">
+        <label for="Date">Date of Birth</label>
+      </div>
+      <input type="date" id="Date" name="Date"/>
+    </div>
+    <div class="space">
+      <div class="label">
+        <label for="Gender">Gender</label>
+      </div>
+      <input type="radio" class="buttons" id="Male" name="Gender"/>&nbsp&nbsp<label for="Male">Male</label>
+      <input type="radio" class="buttons" id="Female" name="Gender"/>&nbsp&nbsp<label for="Female">Female</label>
+      <input type="radio" class="buttons" id="others" name="Gender"/>&nbsp&nbsp<label for="others">Others</label>
+    </div>
+    <div class="space">
+      <div class="label">
+        <label for="Department">Department</label>
+      </div>
+      <select size="1"> 
+        <option value="Computer Science">Computer Science</option>
+        <option value="Information Technology">Information Technology</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+       </select> 
+    </div> 
+      <input type="submit" value="Submit Button" class="button1">
+      <input type="reset" value="Clear Button" class="button2">
+    </div>
+    </div>
+    </form>
+  </body>
+</html>
